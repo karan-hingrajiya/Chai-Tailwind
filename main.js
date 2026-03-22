@@ -126,6 +126,110 @@ const colors = {
   black: {
     defaultCol: "#000000",
   },
+  teal: {
+    defaultCol: "#14b8a6",
+    50: "oklch(97.3% 0.017 180.7)",
+    100: "oklch(94.9% 0.041 181.6)",
+    200: "oklch(90.2% 0.078 182.0)",
+    300: "oklch(83.1% 0.142 182.9)",
+    400: "oklch(74.4% 0.198 184.1)",
+    500: "oklch(68.3% 0.220 185.2)",
+    600: "oklch(59.9% 0.210 186.0)",
+    700: "oklch(50.5% 0.170 187.0)",
+    800: "oklch(42.1% 0.140 188.5)",
+    900: "oklch(37.1% 0.113 191.3)",
+  },
+  indigo: {
+    defaultCol: "#6366f1",
+    50: "oklch(97.4% 0.013 272.5)",
+    100: "oklch(94.5% 0.031 272.3)",
+    200: "oklch(89.7% 0.060 271.9)",
+    300: "oklch(82.7% 0.111 272.1)",
+    400: "oklch(72.5% 0.182 273.5)",
+    500: "oklch(63.5% 0.238 273.8)",
+    600: "oklch(55.2% 0.265 272.9)",
+    700: "oklch(49.0% 0.257 271.4)",
+    800: "oklch(42.9% 0.211 271.4)",
+    900: "oklch(38.8% 0.168 272.6)",
+  },
+  sky: {
+    defaultCol: "#0ea5e9",
+    50: "oklch(97.8% 0.015 236.0)",
+    100: "oklch(94.6% 0.039 237.5)",
+    200: "oklch(89.5% 0.075 235.1)",
+    300: "oklch(82.4% 0.145 233.9)",
+    400: "oklch(73.4% 0.213 232.7)",
+    500: "oklch(68.4% 0.232 231.6)",
+    600: "oklch(59.7% 0.230 231.6)",
+    700: "oklch(50.6% 0.179 232.4)",
+    800: "oklch(42.3% 0.145 233.8)",
+    900: "oklch(37.5% 0.112 236.0)",
+  },
+  slate: {
+    defaultCol: "#64748b",
+    50: "oklch(98.5% 0.002 264.4)",
+    100: "oklch(96.7% 0.003 264.5)",
+    200: "oklch(92.8% 0.005 264.8)",
+    300: "oklch(87.7% 0.009 265.2)",
+    400: "oklch(77.3% 0.018 265.9)",
+    500: "oklch(63.0% 0.035 265.5)",
+    600: "oklch(49.6% 0.031 265.5)",
+    700: "oklch(40.6% 0.024 265.5)",
+    800: "oklch(30.5% 0.016 264.1)",
+    900: "oklch(23.3% 0.009 264.1)",
+  },
+  amber: {
+    defaultCol: "#f59e0b",
+    50: "oklch(97.9% 0.020 82.7)",
+    100: "oklch(95.8% 0.054 82.9)",
+    200: "oklch(91.6% 0.112 81.9)",
+    300: "oklch(86.4% 0.168 79.9)",
+    400: "oklch(79.0% 0.219 75.5)",
+    500: "oklch(71.4% 0.239 68.1)",
+    600: "oklch(62.2% 0.215 51.3)",
+    700: "oklch(51.1% 0.165 42.5)",
+    800: "oklch(42.7% 0.132 36.7)",
+    900: "oklch(37.1% 0.107 32.3)",
+  },
+  rose: {
+    defaultCol: "#f43f5e",
+    50: "oklch(97.2% 0.013 354.4)",
+    100: "oklch(94.7% 0.031 353.9)",
+    200: "oklch(90.0% 0.065 354.3)",
+    300: "oklch(82.4% 0.130 355.5)",
+    400: "oklch(71.5% 0.215 359.9)",
+    500: "oklch(62.0% 0.280 3.5)",
+    600: "oklch(56.4% 0.270 7.3)",
+    700: "oklch(49.0% 0.237 8.5)",
+    800: "oklch(42.0% 0.193 9.3)",
+    900: "oklch(37.4% 0.153 10.3)",
+  },
+  lime: {
+    defaultCol: "#84cc16",
+    50: "oklch(97.8% 0.025 119.0)",
+    100: "oklch(95.9% 0.063 119.2)",
+    200: "oklch(91.9% 0.121 119.1)",
+    300: "oklch(86.3% 0.187 116.8)",
+    400: "oklch(78.9% 0.258 112.5)",
+    500: "oklch(72.1% 0.274 107.6)",
+    600: "oklch(61.8% 0.243 99.4)",
+    700: "oklch(50.2% 0.189 92.2)",
+    800: "oklch(42.2% 0.143 86.4)",
+    900: "oklch(36.9% 0.111 81.8)",
+  },
+  emerald: {
+    defaultCol: "#10b981",
+    50: "oklch(97.3% 0.018 167.4)",
+    100: "oklch(95.2% 0.044 167.8)",
+    200: "oklch(90.9% 0.085 168.2)",
+    300: "oklch(84.7% 0.157 168.5)",
+    400: "oklch(76.5% 0.220 169.0)",
+    500: "oklch(69.5% 0.245 169.5)",
+    600: "oklch(60.6% 0.220 170.0)",
+    700: "oklch(50.8% 0.173 170.5)",
+    800: "oklch(42.3% 0.137 171.0)",
+    900: "oklch(37.0% 0.110 171.5)",
+  },
 };
 
 const borderStyling = {
@@ -284,45 +388,323 @@ const properties = {
     type: "static",
   },
   "shadow-none": { cssProp: "box-shadow", val: "none", type: "static" },
+  // Transform Properties
+  scale: {
+    cssProp: "transform",
+    map: {
+      50: "scale(0.5)",
+      75: "scale(0.75)",
+      90: "scale(0.9)",
+      95: "scale(0.95)",
+      100: "scale(1)",
+      105: "scale(1.05)",
+      110: "scale(1.1)",
+      125: "scale(1.25)",
+      150: "scale(1.5)",
+    },
+    type: "spacing",
+  },
+  "scale-x": {
+    cssProp: "transform",
+    map: {
+      50: "scaleX(0.5)",
+      75: "scaleX(0.75)",
+      100: "scaleX(1)",
+      125: "scaleX(1.25)",
+      150: "scaleX(1.5)",
+    },
+    type: "spacing",
+  },
+  "scale-y": {
+    cssProp: "transform",
+    map: {
+      50: "scaleY(0.5)",
+      75: "scaleY(0.75)",
+      100: "scaleY(1)",
+      125: "scaleY(1.25)",
+      150: "scaleY(1.5)",
+    },
+    type: "spacing",
+  },
+  rotate: {
+    cssProp: "transform",
+    map: {
+      0: "rotate(0deg)",
+      1: "rotate(1deg)",
+      2: "rotate(2deg)",
+      3: "rotate(3deg)",
+      6: "rotate(6deg)",
+      12: "rotate(12deg)",
+      45: "rotate(45deg)",
+      90: "rotate(90deg)",
+      180: "rotate(180deg)",
+    },
+    type: "spacing",
+  },
+  "-rotate": {
+    cssProp: "transform",
+    map: {
+      1: "rotate(-1deg)",
+      2: "rotate(-2deg)",
+      3: "rotate(-3deg)",
+      6: "rotate(-6deg)",
+      12: "rotate(-12deg)",
+      45: "rotate(-45deg)",
+      90: "rotate(-90deg)",
+    },
+    type: "spacing",
+  },
+  "translate-x": { cssProp: "transform", map: spacing, type: "spacing" },
+  "translate-y": { cssProp: "transform", map: spacing, type: "spacing" },
+  skew: {
+    cssProp: "transform",
+    map: {
+      1: "skew(1deg)",
+      2: "skew(2deg)",
+      3: "skew(3deg)",
+      6: "skew(6deg)",
+      12: "skew(12deg)",
+    },
+    type: "spacing",
+  },
+  "skew-x": {
+    cssProp: "transform",
+    map: {
+      1: "skewX(1deg)",
+      2: "skewX(2deg)",
+      3: "skewX(3deg)",
+      6: "skewX(6deg)",
+      12: "skewX(12deg)",
+    },
+    type: "spacing",
+  },
+  "skew-y": {
+    cssProp: "transform",
+    map: {
+      1: "skewY(1deg)",
+      2: "skewY(2deg)",
+      3: "skewY(3deg)",
+      6: "skewY(6deg)",
+      12: "skewY(12deg)",
+    },
+    type: "spacing",
+  },
+  // Transitions & Animation
+  transition: {
+    cssProp: "transition",
+    map: {
+      all: "all 150ms cubic-bezier(0.4, 0, 0.2, 1)",
+      colors: "color 150ms, background-color 150ms, border-color 150ms",
+      opacity: "opacity 150ms",
+      transform: "transform 150ms",
+      none: "none",
+    },
+    type: "spacing",
+  },
+  duration: {
+    cssProp: "transition-duration",
+    map: {
+      75: "75ms",
+      100: "100ms",
+      150: "150ms",
+      200: "200ms",
+      300: "300ms",
+      500: "500ms",
+      700: "700ms",
+      1000: "1000ms",
+    },
+    type: "spacing",
+  },
+  ease: {
+    cssProp: "transition-timing-function",
+    map: {
+      linear: "linear",
+      in: "cubic-bezier(0.4, 0, 1, 1)",
+      out: "cubic-bezier(0, 0, 0.2, 1)",
+      "in-out": "cubic-bezier(0.4, 0, 0.2, 1)",
+    },
+    type: "spacing",
+  },
+  // Text Transform
+  uppercase: { cssProp: "text-transform", val: "uppercase", type: "static" },
+  lowercase: { cssProp: "text-transform", val: "lowercase", type: "static" },
+  capitalize: { cssProp: "text-transform", val: "capitalize", type: "static" },
+  "normal-case": { cssProp: "text-transform", val: "none", type: "static" },
+  // Cursor
+  "cursor-pointer": { cssProp: "cursor", val: "pointer", type: "static" },
+  "cursor-default": { cssProp: "cursor", val: "default", type: "static" },
+  "cursor-not-allowed": {
+    cssProp: "cursor",
+    val: "not-allowed",
+    type: "static",
+  },
+  "cursor-wait": { cssProp: "cursor", val: "wait", type: "static" },
+  "cursor-move": { cssProp: "cursor", val: "move", type: "static" },
+  // Object Fit
+  "object-contain": { cssProp: "object-fit", val: "contain", type: "static" },
+  "object-cover": { cssProp: "object-fit", val: "cover", type: "static" },
+  "object-fill": { cssProp: "object-fit", val: "fill", type: "static" },
+  "object-scale-down": {
+    cssProp: "object-fit",
+    val: "scale-down",
+    type: "static",
+  },
+  // User Select
+  "select-none": { cssProp: "user-select", val: "none", type: "static" },
+  "select-text": { cssProp: "user-select", val: "text", type: "static" },
+  "select-auto": { cssProp: "user-select", val: "auto", type: "static" },
+  // Pointer Events
+  "pointer-events-none": {
+    cssProp: "pointer-events",
+    val: "none",
+    type: "static",
+  },
+  "pointer-events-auto": {
+    cssProp: "pointer-events",
+    val: "auto",
+    type: "static",
+  },
+  // Filters
+  blur: {
+    cssProp: "filter",
+    map: {
+      sm: "blur(4px)",
+      md: "blur(12px)",
+      lg: "blur(20px)",
+      xl: "blur(40px)",
+      "2xl": "blur(60px)",
+    },
+    type: "spacing",
+  },
+  brightness: {
+    cssProp: "filter",
+    map: {
+      50: "brightness(0.5)",
+      75: "brightness(0.75)",
+      100: "brightness(1)",
+      125: "brightness(1.25)",
+      150: "brightness(1.5)",
+      200: "brightness(2)",
+    },
+    type: "spacing",
+  },
+  contrast: {
+    cssProp: "filter",
+    map: {
+      50: "contrast(0.5)",
+      75: "contrast(0.75)",
+      100: "contrast(1)",
+      125: "contrast(1.25)",
+      150: "contrast(1.5)",
+      200: "contrast(2)",
+    },
+    type: "spacing",
+  },
+  saturate: {
+    cssProp: "filter",
+    map: {
+      0: "saturate(0)",
+      50: "saturate(0.5)",
+      100: "saturate(1)",
+      150: "saturate(1.5)",
+      200: "saturate(2)",
+    },
+    type: "spacing",
+  },
+  // Letter Spacing
+  "tracking-tight": {
+    cssProp: "letter-spacing",
+    val: "-0.02em",
+    type: "static",
+  },
+  "tracking-normal": { cssProp: "letter-spacing", val: "0em", type: "static" },
+  "tracking-wide": { cssProp: "letter-spacing", val: "0.02em", type: "static" },
+  "tracking-wider": {
+    cssProp: "letter-spacing",
+    val: "0.05em",
+    type: "static",
+  },
+  // Tab Size
+  "tab-4": { cssProp: "tab-size", val: "4", type: "static" },
+  "tab-8": { cssProp: "tab-size", val: "8", type: "static" },
 };
 
 function parseCss(CssString) {
   let prefixValues = CssString.split("-");
-  let twoWordProp = prefixValues[1] + "-" + prefixValues[2]; // "inline-block"
-  let oneWordProp = prefixValues[1]; // "inline"
+  prefixValues.shift(); // Remove "chai" prefix
+
   let prop;
   let value;
   let colShade;
-  if (properties[twoWordProp]) {
-    prop = twoWordProp;
-    value = prefixValues[3];
-    colShade = prefixValues[4];
-  } else if (properties[oneWordProp]) {
-    prop = oneWordProp;
-    value = prefixValues[2];
-    colShade = prefixValues[3];
-  } else {
-    console.error("property you are trying to get is not exist yet !!!");
+
+  // Try 4-part property (e.g., "pointer-events-none")
+  if (prefixValues.length >= 3) {
+    let fourWordProp =
+      prefixValues[0] + "-" + prefixValues[1] + "-" + prefixValues[2];
+    if (properties[fourWordProp]) {
+      prop = fourWordProp;
+      value = prefixValues[3];
+      colShade = prefixValues[4];
+      return { prop, value, colShade };
+    }
   }
 
-  return { prop, value, colShade };
+  // Try 3-part property (e.g., "tracking-tight", "text-left", "flex-col")
+  if (prefixValues.length >= 2) {
+    let threeWordProp = prefixValues[0] + "-" + prefixValues[1];
+    if (properties[threeWordProp]) {
+      prop = threeWordProp;
+      value = prefixValues[2];
+      colShade = prefixValues[3];
+      return { prop, value, colShade };
+    }
+  }
+
+  // Try 2-part property (e.g., "bg-blue", "rounded-lg", "shadow-md")
+  if (prefixValues.length >= 1) {
+    let twoWordProp = prefixValues[0];
+    if (properties[twoWordProp]) {
+      prop = twoWordProp;
+      value = prefixValues[1];
+      colShade = prefixValues[2];
+      return { prop, value, colShade };
+    }
+  }
+
+  console.error(
+    "property you are trying to use is not defined yet: " + CssString,
+  );
+  return { prop: null, value: null, colShade: null };
 }
 
 function resolveValue(prop, val, shade) {
   // look up the actual CSS value
-  // handle shade if it exists
-  if (!properties[prop]) {
+  if (!prop || !properties[prop]) {
     return null;
   }
 
   const lookup = properties[prop];
-  const cssProp = lookup.cssProp; // "padding" || "background-color"
+  const cssProp = lookup.cssProp;
 
-  if (lookup.type === "spacing") return { cssProp, cssVal: lookup.map[val] };
+  if (!lookup.map && !lookup.val) {
+    return null;
+  }
+
+  if (lookup.type === "spacing") {
+    if (lookup.map && lookup.map[val]) {
+      return { cssProp, cssVal: lookup.map[val] };
+    }
+    return null;
+  }
 
   if (lookup.type === "color") {
-    if (shade) return { cssProp, cssVal: lookup.map[val][shade] };
-    return { cssProp, cssVal: lookup.map[val].defaultCol };
+    if (lookup.map && lookup.map[val]) {
+      if (shade && lookup.map[val][shade]) {
+        return { cssProp, cssVal: lookup.map[val][shade] };
+      }
+      return { cssProp, cssVal: lookup.map[val].defaultCol };
+    }
+    return null;
   }
 
   if (lookup.type === "static") {
@@ -341,8 +723,11 @@ elements.forEach((elem) => {
   classes.forEach((e) => {
     if (e.startsWith("chai-")) {
       let res = parseCss(e);
+
       let finalresult = resolveValue(res.prop, res.value, res.colShade);
-      style.innerHTML += `.${e}{ ${finalresult.cssProp}:${finalresult.cssVal} }\n`;
+      if (finalresult) {
+        style.innerHTML += `.${e}{ ${finalresult.cssProp}:${finalresult.cssVal}; }\n`;
+      }
     }
   });
 });

@@ -1,77 +1,665 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Chai CSS Demo</title>
-  </head>
-  <body class="chai-bg-gray-100 chai-p-6">
-    <!-- Navbar -->
-
-    <nav
-      class="chai-flex chai-justify-center chai-items-center chai-bg-white chai-p-4 chai-rounded-md chai-shadow-md"
-    >
-      <h1 class="chai-text-2xl chai-font-bold chai-textcol-blue-600">
-        ChaiCSS
-      </h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaiCSS - Powerful CSS Framework</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+    </style>
+</head>
+<body class="chai-bg-slate-900 chai-textcol-slate-100">
+    <!-- NAVBAR -->
+    <nav class="chai-bg-slate-800 chai-shadow-xl chai-p-4">
+        <div class="chai-flex chai-justify-between chai-items-center">
+            <div class="chai-flex chai-items-center chai-gap-2">
+                <span class="chai-text-2xl">⚡</span>
+                <span class="chai-textcol-indigo-400 chai-font-bold">ChaiCSS</span>
+            </div>
+            <div class="chai-flex chai-gap-6">
+                <a href="#showcase" class="chai-textcol-slate-300 chai-font-normal chai-transition chai-duration-300">Showcase</a>
+                <a href="#colors" class="chai-textcol-slate-300 chai-font-normal chai-transition chai-duration-300">Colors</a>
+                <a href="#stats" class="chai-textcol-slate-300 chai-font-normal chai-transition chai-duration-300">Stats</a>
+            </div>
+        </div>
     </nav>
 
-    <!-- Hero Section -->
-
-    <section
-      class="chai-flex chai-flex-col chai-items-center chai-justify-center chai-mt-6 chai-p-6 chai-bg-blue-500 chai-rounded-lg chai-shadow-lg"
-    >
-      <h2 class="chai-text-3xl chai-font-bold chai-textcol-white chai-mb-2">
-        Build Fast UI
-      </h2>
-      <p class="chai-text-base chai-textcol-white chai-mb-4">
-        Your own Tailwind-like system 🚀
-      </p>
-      <button
-        class="chai-bg-white chai-textcol-blue-500 chai-p-3 chai-rounded-md chai-font-medium"
-      >
-        Get Started
-      </button>
+    <!-- HERO SECTION -->
+    <section class="chai-bg-slate-800 chai-p-12 chai-text-center">
+        <h1 class="chai-text-2xl chai-font-bold chai-textcol-white chai-mb-4">Modern CSS Without Complexity</h1>
+        <p class="chai-textcol-slate-300 chai-mb-8 chai-font-light">Vanilla JavaScript meets elegant design. Build stunning interfaces with pure utilities.</p>
+        <div class="chai-flex chai-gap-3 chai-justify-center">
+            <button class="chai-bg-indigo-600 chai-textcol-white chai-p-3 chai-rounded-md chai-font-bold chai-shadow-lg chai-cursor-pointer chai-transition chai-duration-300">Explore →</button>
+            <button class="chai-bg-slate-700 chai-textcol-indigo-300 chai-p-3 chai-rounded-md chai-border chai-font-normal chai-cursor-pointer chai-transition chai-duration-300">Learn More</button>
+        </div>
     </section>
 
-    <!-- Cards Section -->
+    <!-- BUTTON SHOWCASE - MODERN CREATIVE DESIGNS -->
+    <section id="showcase" class="chai-bg-slate-900 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-10 chai-text-center">Modern Button Designs</h2>
+        
+        <!-- Primary Buttons with Hover Effects -->
+        <div class="chai-flex chai-flex-wrap chai-gap-6 chai-justify-center chai-mb-12">
+            <button class="chai-bg-indigo-600 chai-textcol-white chai-p-3 chai-rounded-lg chai-font-bold chai-shadow-lg chai-cursor-pointer chai-transition chai-duration-300 chai-scale-100" style="border: none;">Scale Hover</button>
+            <button class="chai-bg-blue-600 chai-textcol-white chai-p-3 chai-rounded-lg chai-font-bold chai-shadow-lg chai-cursor-pointer chai-transition chai-duration-200 chai-rotate-0" style="border: none;">Rotate Hover</button>
+            <button class="chai-bg-green-600 chai-textcol-white chai-p-3 chai-rounded-lg chai-font-bold chai-shadow-lg chai-cursor-pointer chai-transition chai-duration-300" style="border: none;">Shadow Lift</button>
+            <button class="chai-bg-purple-600 chai-textcol-white chai-p-3 chai-rounded-lg chai-font-bold chai-shadow-lg chai-cursor-pointer chai-transition chai-duration-300 chai-text-base" style="border: none;">Text Bold</button>
+        </div>
 
-    <section class="chai-grid chai-gap-4 chai-mt-6">
-      <!-- Card 1 -->
-      <div class="chai-bg-white chai-p-4 chai-rounded-lg chai-shadow-md">
-        <h3 class="chai-text-xl chai-font-semibold chai-mb-2">Utility First</h3>
-        <p class="chai-text-sm chai-textcol-gray-600">
-          Build UI using small reusable classes.
-        </p>
-      </div>
+        <!-- Secondary Buttons with Borders (Modern Outline) -->
+        <div class="chai-flex chai-flex-wrap chai-gap-6 chai-justify-center chai-mb-12">
+            <button class="chai-bg-slate-800 chai-textcol-indigo-400 chai-p-3 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition chai-duration-300 chai-shadow-md" style="border: 2px solid #818cf8;">Outline Indigo</button>
+            <button class="chai-bg-slate-800 chai-textcol-sky-400 chai-p-3 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition chai-duration-300 chai-shadow-md" style="border: 2px solid #0ea5e9;">Outline Sky</button>
+            <button class="chai-bg-slate-800 chai-textcol-emerald-400 chai-p-3 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition chai-duration-300 chai-shadow-md" style="border: 2px solid #10b981;">Outline Emerald</button>
+            <button class="chai-bg-slate-800 chai-textcol-rose-400 chai-p-3 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition chai-duration-300 chai-shadow-md" style="border: 2px solid #f43f5e;">Outline Rose</button>
+        </div>
 
-      <!-- Card 2 -->
-      <div class="chai-bg-white chai-p-4 chai-rounded-lg chai-shadow-md">
-        <h3 class="chai-text-xl chai-font-semibold chai-mb-2">Custom Engine</h3>
-        <p class="chai-text-sm chai-textcol-gray-600">
-          You built your own CSS engine like Tailwind.
-        </p>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="chai-bg-white chai-p-4 chai-rounded-lg chai-shadow-md">
-        <h3 class="chai-text-xl chai-font-semibold chai-mb-2">
-          Optimized Output
-        </h3>
-        <p class="chai-text-sm chai-textcol-gray-600">
-          Only used styles are generated.
-        </p>
-      </div>
+        <!-- Feature Cards - Modern Glassmorphism Style -->
+        <div class="chai-flex chai-flex-wrap chai-gap-6 chai-justify-center">
+            <div class="chai-bg-indigo-900 chai-p-8 chai-rounded-lg chai-shadow-xl chai-transition chai-duration-300 chai-scale-100" style="flex: 0 1 280px; backdrop-filter: blur(10px); border: 1px solid rgba(129, 140, 248, 0.3);">
+                <div class="chai-text-4xl chai-mb-4">⚡</div>
+                <h3 class="chai-text-lg chai-font-bold chai-textcol-white chai-mb-3">Lightning Fast</h3>
+                <p class="chai-textcol-indigo-200 chai-text-sm chai-font-light chai-line-height-loose">Zero runtime overhead, pure vanilla JavaScript performance</p>
+            </div>
+            <div class="chai-bg-sky-900 chai-p-8 chai-rounded-lg chai-shadow-xl chai-transition chai-duration-300 chai-scale-100" style="flex: 0 1 280px; backdrop-filter: blur(10px); border: 1px solid rgba(14, 165, 233, 0.3);">
+                <div class="chai-text-4xl chai-mb-4">🎨</div>
+                <h3 class="chai-text-lg chai-font-bold chai-textcol-white chai-mb-3">14 Palettes</h3>
+                <p class="chai-textcol-sky-200 chai-text-sm chai-font-light chai-line-height-loose">Hand-crafted OKLCH color system with 10 shades each</p>
+            </div>
+            <div class="chai-bg-emerald-900 chai-p-8 chai-rounded-lg chai-shadow-xl chai-transition chai-duration-300 chai-scale-100" style="flex: 0 1 280px; backdrop-filter: blur(10px); border: 1px solid rgba(16, 185, 129, 0.3);">
+                <div class="chai-text-4xl chai-mb-4">📦</div>
+                <h3 class="chai-text-lg chai-font-bold chai-textcol-white chai-mb-3">Zero Deps</h3>
+                <p class="chai-textcol-emerald-200 chai-text-sm chai-font-light chai-line-height-loose">Pure vanilla JavaScript, no external dependencies needed</p>
+            </div>
+            <div class="chai-bg-rose-900 chai-p-8 chai-rounded-lg chai-shadow-xl chai-transition chai-duration-300 chai-scale-100" style="flex: 0 1 280px; backdrop-filter: blur(10px); border: 1px solid rgba(244, 63, 94, 0.3);">
+                <div class="chai-text-4xl chai-mb-4">✨</div>
+                <h3 class="chai-text-lg chai-font-bold chai-textcol-white chai-mb-3">100+ Utils</h3>
+                <p class="chai-textcol-rose-200 chai-text-sm chai-font-light chai-line-height-loose">Complete utility ecosystem with transforms and animations</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer -->
+    <!-- OPACITY & TRANSPARENCY -->
+    <section class="chai-bg-slate-800 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Opacity Levels</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-6 chai-justify-center">
+            <div class="chai-bg-indigo-600 chai-p-6 chai-rounded-lg chai-text-center chai-opacity-0" style="border: 1px solid #818cf8;">
+                <p class="chai-textcol-white chai-font-bold">0% (Hidden)</p>
+            </div>
+            <div class="chai-bg-indigo-600 chai-p-6 chai-rounded-lg chai-text-center chai-opacity-25" style="border: 1px solid #818cf8;">
+                <p class="chai-textcol-white chai-font-bold">25%</p>
+            </div>
+            <div class="chai-bg-indigo-600 chai-p-6 chai-rounded-lg chai-text-center chai-opacity-50" style="border: 1px solid #818cf8;">
+                <p class="chai-textcol-white chai-font-bold">50%</p>
+            </div>
+            <div class="chai-bg-indigo-600 chai-p-6 chai-rounded-lg chai-text-center chai-opacity-75" style="border: 1px solid #818cf8;">
+                <p class="chai-textcol-white chai-font-bold">75%</p>
+            </div>
+            <div class="chai-bg-indigo-600 chai-p-6 chai-rounded-lg chai-text-center chai-opacity-100" style="border: 1px solid #818cf8;">
+                <p class="chai-textcol-white chai-font-bold">100% (Full)</p>
+            </div>
+        </div>
+    </section>
 
-    <footer
-      class="chai-mt-6 chai-p-4 chai-bg-gray-800 chai-text-center chai-rounded-md"
-    >
-      <p class="chai-textcol-white chai-text-sm">Made with ChaiCSS ☕</p>
+    <!-- FILTERS & EFFECTS -->
+    <section class="chai-bg-slate-900 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Filter Effects</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-8 chai-justify-center">
+            <div class="chai-text-center">
+                <div class="chai-bg-indigo-600 chai-p-8 chai-rounded-lg chai-mb-3 chai-blur-sm">
+                    <p class="chai-textcol-white chai-font-bold">blur-sm</p>
+                </div>
+                <p class="chai-textcol-slate-400 chai-text-sm">4px blur</p>
+            </div>
+            <div class="chai-text-center">
+                <div class="chai-bg-indigo-600 chai-p-8 chai-rounded-lg chai-mb-3 chai-blur-md">
+                    <p class="chai-textcol-white chai-font-bold">blur-md</p>
+                </div>
+                <p class="chai-textcol-slate-400 chai-text-sm">12px blur</p>
+            </div>
+            <div class="chai-text-center">
+                <div class="chai-bg-red-600 chai-p-8 chai-rounded-lg chai-mb-3 chai-brightness-150">
+                    <p class="chai-textcol-white chai-font-bold">brightness</p>
+                </div>
+                <p class="chai-textcol-slate-400 chai-text-sm">1.5x brightness</p>
+            </div>
+            <div class="chai-text-center">
+                <div class="chai-bg-blue-600 chai-p-8 chai-rounded-lg chai-mb-3 chai-contrast-150">
+                    <p class="chai-textcol-white chai-font-bold">contrast</p>
+                </div>
+                <p class="chai-textcol-slate-400 chai-text-sm">1.5x contrast</p>
+            </div>
+            <div class="chai-text-center">
+                <div class="chai-bg-purple-600 chai-p-8 chai-rounded-lg chai-mb-3 chai-saturate-200">
+                    <p class="chai-textcol-white chai-font-bold">saturate</p>
+                </div>
+                <p class="chai-textcol-slate-400 chai-text-sm">2x saturation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEXT TRANSFORMS -->
+    <section class="chai-bg-slate-800 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Text Transforms</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-8 chai-justify-center chai-items-center">
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-uppercase chai-mb-2">UPPERCASE - All Caps</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">text-transform: uppercase</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-lowercase chai-mb-2">LOWERCASE - all lower</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">text-transform: lowercase</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-capitalize chai-mb-2">capitalize - Word Start</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">text-transform: capitalize</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-normal-case chai-mb-2">NORMAL cASE - No Transform</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">text-transform: none</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LETTER SPACING -->
+    <section class="chai-bg-slate-900 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Letter Spacing</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-8 chai-justify-center chai-items-center">
+            <div class="chai-bg-slate-800 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-tracking-tight chai-mb-2">Tight Spacing</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">-0.02em</p>
+            </div>
+            <div class="chai-bg-slate-800 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-tracking-normal chai-mb-2">Normal Spacing</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">0em</p>
+            </div>
+            <div class="chai-bg-slate-800 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-tracking-wide chai-mb-2">Wide Spacing</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">0.02em</p>
+            </div>
+            <div class="chai-bg-slate-800 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-tracking-wider chai-mb-2">Wider Spacing</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">0.05em</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LINE HEIGHT -->
+    <section class="chai-bg-slate-800 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Line Heights</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-8 chai-justify-center">
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg" style="max-width: 250px;">
+                <p class="chai-textcol-white chai-line-height-none chai-mb-3">This text has tight line height making it very compact and close together for emphasis.</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">line-height: none (1)</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg" style="max-width: 250px;">
+                <p class="chai-textcol-white chai-line-height-tight chai-mb-3">This text has tight line height making it very compact and close together for emphasis.</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">line-height: tight (1.25)</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg" style="max-width: 250px;">
+                <p class="chai-textcol-white chai-line-height-normal chai-mb-3">This text has normal line height making it very readable and well spaced for body content.</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">line-height: normal (1.5)</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg" style="max-width: 250px;">
+                <p class="chai-textcol-white chai-line-height-loose chai-mb-3">This text has loose line height making it very spacious and easy to read for extended content.</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">line-height: loose (2)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Z-INDEX STACKING -->
+    <section class="chai-bg-slate-900 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Z-Index Stacking</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-8 chai-justify-center chai-items-end" style="height: 200px;">
+            <div class="chai-bg-red-600 chai-p-4 chai-rounded-lg chai-z-0" style="width: 100px; height: 100px; position: relative;">
+                <p class="chai-textcol-white chai-font-bold">z-0</p>
+            </div>
+            <div class="chai-bg-blue-600 chai-p-4 chai-rounded-lg chai-z-10" style="width: 100px; height: 120px; position: relative; margin-left: -30px;">
+                <p class="chai-textcol-white chai-font-bold">z-10</p>
+            </div>
+            <div class="chai-bg-green-600 chai-p-4 chai-rounded-lg chai-z-20" style="width: 100px; height: 140px; position: relative; margin-left: -30px;">
+                <p class="chai-textcol-white chai-font-bold">z-20</p>
+            </div>
+            <div class="chai-bg-purple-600 chai-p-4 chai-rounded-lg chai-z-50" style="width: 100px; height: 160px; position: relative; margin-left: -30px;">
+                <p class="chai-textcol-white chai-font-bold">z-50</p>
+            </div>
+            <div class="chai-bg-pink-600 chai-p-4 chai-rounded-lg chai-z-100" style="width: 100px; height: 180px; position: relative; margin-left: -30px;">
+                <p class="chai-textcol-white chai-font-bold">z-100</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRANSFORMS & SCALE - WITH ANIMATION -->
+    <section class="chai-bg-slate-800 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Transform: Scale & Rotate</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-8 chai-justify-center">
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-indigo-600 chai-p-4 chai-rounded-md chai-scale-50 chai-transition chai-duration-300">50%</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">scale-50</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-blue-600 chai-p-4 chai-rounded-md chai-scale-75 chai-transition chai-duration-300">75%</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">scale-75</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-green-600 chai-p-4 chai-rounded-md chai-scale-100 chai-transition chai-duration-300">100%</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">scale-100</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-purple-600 chai-p-4 chai-rounded-md chai-scale-110 chai-transition chai-duration-300">110%</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">scale-110</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-pink-600 chai-p-4 chai-rounded-md chai-scale-125 chai-transition chai-duration-300">125%</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">scale-125</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-yellow-600 chai-p-4 chai-rounded-md chai-scale-150 chai-transition chai-duration-300">150%</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">scale-150</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROTATIONS -->
+    <section class="chai-bg-slate-900 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Transform: Rotate</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-10 chai-justify-center chai-items-center">
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-red-600 chai-p-6 chai-rounded-md chai-rotate-0 chai-transition chai-duration-300 chai-w-16 chai-text-center">0°</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">rotate-0</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-orange-600 chai-p-6 chai-rounded-md chai-rotate-6 chai-transition chai-duration-300 chai-w-16 chai-text-center">6°</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">rotate-6</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-yellow-600 chai-p-6 chai-rounded-md chai-rotate-12 chai-transition chai-duration-300 chai-w-16 chai-text-center">12°</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">rotate-12</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-green-600 chai-p-6 chai-rounded-md chai-rotate-45 chai-transition chai-duration-300 chai-w-16 chai-text-center">45°</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">rotate-45</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-blue-600 chai-p-6 chai-rounded-md chai-rotate-90 chai-transition chai-duration-300 chai-w-16 chai-text-center">90°</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">rotate-90</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-purple-600 chai-p-6 chai-rounded-md chai-rotate-180 chai-transition chai-duration-300 chai-w-16 chai-text-center">180°</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">rotate-180</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-pink-600 chai-p-6 chai-rounded-md chai--rotate-6 chai-transition chai-duration-300 chai-w-16 chai-text-center">-6°</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">-rotate-6</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKEW & TRANSLATE -->
+    <section class="chai-bg-slate-800 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Transform: Skew & Translate</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-10 chai-justify-center">
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-indigo-600 chai-p-6 chai-rounded-md chai-skew-0 chai-transition chai-duration-300">Skew 0°</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">skew-0</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-sky-600 chai-p-6 chai-rounded-md chai-skew-3 chai-transition chai-duration-300">Skew 3°</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">skew-3</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-emerald-600 chai-p-6 chai-rounded-md chai-skew-6 chai-transition chai-duration-300">Skew 6°</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">skew-6</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-rose-600 chai-p-6 chai-rounded-md chai-skew-12 chai-transition chai-duration-300">Skew 12°</div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-2">skew-12</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRANSITION DURATIONS -->
+    <section class="chai-bg-slate-900 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Transition Durations</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-8 chai-justify-center">
+            <button class="chai-bg-indigo-600 chai-textcol-white chai-p-4 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition chai-duration-75" style="border:none;">75ms</button>
+            <button class="chai-bg-indigo-600 chai-textcol-white chai-p-4 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition chai-duration-100" style="border:none;">100ms</button>
+            <button class="chai-bg-indigo-600 chai-textcol-white chai-p-4 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition chai-duration-150" style="border:none;">150ms</button>
+            <button class="chai-bg-indigo-600 chai-textcol-white chai-p-4 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition chai-duration-200" style="border:none;">200ms</button>
+            <button class="chai-bg-indigo-600 chai-textcol-white chai-p-4 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition chai-duration-300" style="border:none;">300ms</button>
+            <button class="chai-bg-indigo-600 chai-textcol-white chai-p-4 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition chai-duration-500" style="border:none;">500ms</button>
+            <button class="chai-bg-indigo-600 chai-textcol-white chai-p-4 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition chai-duration-700" style="border:none;">700ms</button>
+            <button class="chai-bg-indigo-600 chai-textcol-white chai-p-4 chai-rounded-lg chai-font-bold chai-cursor-pointer chai-transition chai-duration-1000" style="border:none;">1000ms</button>
+        </div>
+    </section>
+
+    <!-- CURSOR STYLES -->
+    <section class="chai-bg-slate-800 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Cursor Styles</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-6 chai-justify-center">
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg chai-cursor-pointer" style="cursor: pointer;">
+                <p class="chai-textcol-white chai-font-bold chai-mb-2">Hover me</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">cursor-pointer</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg chai-cursor-default" style="cursor: default;">
+                <p class="chai-textcol-white chai-font-bold chai-mb-2">Default</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">cursor-default</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg chai-cursor-not-allowed" style="cursor: not-allowed;">
+                <p class="chai-textcol-white chai-font-bold chai-mb-2">Disabled</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">cursor-not-allowed</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg chai-cursor-wait" style="cursor: wait;">
+                <p class="chai-textcol-white chai-font-bold chai-mb-2">Loading</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">cursor-wait</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg chai-cursor-move" style="cursor: move;">
+                <p class="chai-textcol-white chai-font-bold chai-mb-2">Draggable</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">cursor-move</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISPLAY & LAYOUT -->
+    <section class="chai-bg-slate-800 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Display & Layout</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-8 chai-justify-center">
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-font-bold chai-mb-3">Flex Container</p>
+                <div class="chai-flex chai-gap-2">
+                    <div class="chai-bg-indigo-600 chai-p-2 chai-rounded-sm">Item 1</div>
+                    <div class="chai-bg-indigo-600 chai-p-2 chai-rounded-sm">Item 2</div>
+                </div>
+                <p class="chai-textcol-slate-400 chai-text-sm chai-mt-3">display: flex</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-font-bold chai-mb-3">Flex Column</p>
+                <div class="chai-flex chai-flex-col chai-gap-2">
+                    <div class="chai-bg-sky-600 chai-p-2 chai-rounded-sm">Item 1</div>
+                    <div class="chai-bg-sky-600 chai-p-2 chai-rounded-sm">Item 2</div>
+                </div>
+                <p class="chai-textcol-slate-400 chai-text-sm chai-mt-3">flex-direction: column</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-font-bold chai-mb-3">Inline-Block</p>
+                <div class="chai-inline-block chai-bg-green-600 chai-p-2 chai-rounded-sm chai-mr-2">Item 1</div>
+                <div class="chai-inline-block chai-bg-green-600 chai-p-2 chai-rounded-sm">Item 2</div>
+                <p class="chai-textcol-slate-400 chai-text-sm chai-mt-3">display: inline-block</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-font-bold chai-mb-3">Grid Display</p>
+                <div class="chai-grid" style="grid-template-columns: 1fr 1fr; gap: 8px;">
+                    <div class="chai-bg-purple-600 chai-p-2 chai-rounded-sm">Grid 1</div>
+                    <div class="chai-bg-purple-600 chai-p-2 chai-rounded-sm">Grid 2</div>
+                </div>
+                <p class="chai-textcol-slate-400 chai-text-sm chai-mt-3">display: grid</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLEXBOX ALIGNMENT -->
+    <section class="chai-bg-slate-900 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Flexbox Alignment</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-8 chai-justify-center">
+            <div class="chai-bg-slate-800 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-font-bold chai-mb-3">items-center</p>
+                <div class="chai-flex chai-items-center chai-gap-2" style="height: 80px;">
+                    <div class="chai-bg-indigo-600 chai-p-2 chai-rounded-sm">Centered</div>
+                    <div class="chai-bg-indigo-600 chai-p-3 chai-rounded-sm">Items</div>
+                </div>
+            </div>
+            <div class="chai-bg-slate-800 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-font-bold chai-mb-3">items-start</p>
+                <div class="chai-flex chai-items-start chai-gap-2" style="height: 80px;">
+                    <div class="chai-bg-sky-600 chai-p-2 chai-rounded-sm">Start</div>
+                    <div class="chai-bg-sky-600 chai-p-3 chai-rounded-sm">Items</div>
+                </div>
+            </div>
+            <div class="chai-bg-slate-800 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-font-bold chai-mb-3">justify-center</p>
+                <div class="chai-flex chai-justify-center chai-gap-2">
+                    <div class="chai-bg-green-600 chai-p-2 chai-rounded-sm">Centered</div>
+                    <div class="chai-bg-green-600 chai-p-2 chai-rounded-sm">Content</div>
+                </div>
+            </div>
+            <div class="chai-bg-slate-800 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-font-bold chai-mb-3">justify-between</p>
+                <div class="chai-flex chai-justify-between chai-gap-2">
+                    <div class="chai-bg-purple-600 chai-p-2 chai-rounded-sm">Space</div>
+                    <div class="chai-bg-purple-600 chai-p-2 chai-rounded-sm">Between</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEXT ALIGNMENT & STYLING -->
+    <section class="chai-bg-slate-800 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Text Alignment</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-8 chai-justify-center">
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg" style="width: 250px;">
+                <p class="chai-textcol-white chai-text-left chai-font-bold chai-mb-2">Left Aligned</p>
+                <p class="chai-textcol-slate-400 chai-text-left chai-text-sm">This text is aligned to the left side of the container.</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg" style="width: 250px;">
+                <p class="chai-textcol-white chai-text-center chai-font-bold chai-mb-2">Center Aligned</p>
+                <p class="chai-textcol-slate-400 chai-text-center chai-text-sm">This text is centered within the container.</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg" style="width: 250px;">
+                <p class="chai-textcol-white chai-text-right chai-font-bold chai-mb-2">Right Aligned</p>
+                <p class="chai-textcol-slate-400 chai-text-right chai-text-sm">This text is aligned to the right side.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OVERFLOW & USER SELECT -->
+    <section class="chai-bg-slate-900 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Overflow & Interaction</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-8 chai-justify-center">
+            <div class="chai-bg-slate-800 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-font-bold chai-mb-3">overflow-hidden</p>
+                <div class="chai-bg-slate-700 chai-p-3 chai-rounded-sm chai-overflow-hidden" style="width: 150px; height: 60px;">
+                    <p class="chai-textcol-slate-300 chai-text-sm">Text is clipped and hidden outside container boundaries</p>
+                </div>
+            </div>
+            <div class="chai-bg-slate-800 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-font-bold chai-mb-3">overflow-scroll</p>
+                <div class="chai-bg-slate-700 chai-p-3 chai-rounded-sm chai-overflow-scroll" style="width: 150px; height: 60px;">
+                    <p class="chai-textcol-slate-300 chai-text-sm">Scrollable content with overflow</p>
+                </div>
+            </div>
+            <div class="chai-bg-slate-800 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-font-bold chai-mb-3">pointer-events-none</p>
+                <div class="chai-bg-slate-700 chai-p-3 chai-rounded-sm chai-pointer-events-none" style="cursor: not-allowed;">
+                    <p class="chai-textcol-slate-300 chai-text-sm">No pointer events</p>
+                </div>
+            </div>
+            <div class="chai-bg-slate-800 chai-p-6 chai-rounded-lg">
+                <p class="chai-textcol-white chai-font-bold chai-mb-3">select-none</p>
+                <div class="chai-bg-slate-700 chai-p-3 chai-rounded-sm chai-select-none">
+                    <p class="chai-textcol-slate-300 chai-text-sm">Can't select this text</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPACING SYSTEM -->
+    <section class="chai-bg-slate-800 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Spacing Scale (4px units)</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-6 chai-justify-center">
+            <div class="chai-flex chai-items-center chai-gap-3">
+                <span class="chai-textcol-slate-400 chai-w-12">p-1</span>
+                <div class="chai-bg-indigo-600 chai-p-1 chai-rounded-sm">4px</div>
+            </div>
+            <div class="chai-flex chai-items-center chai-gap-3">
+                <span class="chai-textcol-slate-400 chai-w-12">p-2</span>
+                <div class="chai-bg-indigo-600 chai-p-2 chai-rounded-sm">8px</div>
+            </div>
+            <div class="chai-flex chai-items-center chai-gap-3">
+                <span class="chai-textcol-slate-400 chai-w-12">p-3</span>
+                <div class="chai-bg-indigo-600 chai-p-3 chai-rounded-sm">12px</div>
+            </div>
+            <div class="chai-flex chai-items-center chai-gap-3">
+                <span class="chai-textcol-slate-400 chai-w-12">p-6</span>
+                <div class="chai-bg-indigo-600 chai-p-6 chai-rounded-sm">24px</div>
+            </div>
+            <div class="chai-flex chai-items-center chai-gap-3">
+                <span class="chai-textcol-slate-400 chai-w-12">p-12</span>
+                <div class="chai-bg-indigo-600 chai-p-12 chai-rounded-sm" style="width: 48px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BORDER RADIUS -->
+    <section class="chai-bg-slate-900 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Border Radius Sizes</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-10 chai-justify-center chai-items-center">
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-indigo-600 chai-p-6 chai-rounded-sm" style="width: 80px; height: 80px; border-radius: 4px;"></div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-3">rounded-sm<br>(4px)</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-sky-600 chai-p-6 chai-rounded-md" style="width: 80px; height: 80px; border-radius: 8px;"></div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-3">rounded-md<br>(8px)</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-green-600 chai-p-6 chai-rounded-lg" style="width: 80px; height: 80px; border-radius: 16px;"></div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-3">rounded-lg<br>(16px)</p>
+            </div>
+            <div class="chai-flex chai-flex-col chai-items-center">
+                <div class="chai-bg-purple-600 chai-p-6 chai-rounded-xl" style="width: 80px; height: 80px; border-radius: 24px;"></div>
+                <p class="chai-textcol-slate-300 chai-text-sm chai-mt-3">rounded-xl<br>(24px)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BORDER STYLES -->
+    <section class="chai-bg-slate-800 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Border Styles</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-8 chai-justify-center">
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg chai-border chai-border-solid chai-bordercol-indigo-500">
+                <p class="chai-textcol-white chai-font-bold">Solid Border</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">border-solid</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-6 chai-rounded-lg chai-border chai-border-dashed chai-bordercol-sky-500" style="border-style: dashed;">
+                <p class="chai-textcol-white chai-font-bold">Dashed Border</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">border-dashed</p>
+            </div>
+            <div class="chai-bg-slate-700 chai-bt chai-bb chai-bl chai-br chai-bordercol-emerald-500" style="border-width: 2px; padding: 24px 24px; border-radius: 8px;">
+                <p class="chai-textcol-white chai-font-bold">Multi-side</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">bt bb bl br</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVANCED SHADOWS -->
+    <section class="chai-bg-slate-900 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Advanced Shadows</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-8 chai-justify-center">
+            <div class="chai-bg-slate-800 chai-p-8 chai-rounded-lg chai-shadow-sm">
+                <p class="chai-textcol-white chai-font-bold">shadow-sm</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">0 1px 2px rgba(0,0,0,0.05)</p>
+            </div>
+            <div class="chai-bg-slate-800 chai-p-8 chai-rounded-lg chai-shadow-md">
+                <p class="chai-textcol-white chai-font-bold">shadow-md</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">0 4px 6px rgba(0,0,0,0.1)</p>
+            </div>
+            <div class="chai-bg-slate-800 chai-p-8 chai-rounded-lg chai-shadow-lg">
+                <p class="chai-textcol-white chai-font-bold">shadow-lg</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">0 10px 15px rgba(0,0,0,0.1)</p>
+            </div>
+            <div class="chai-bg-slate-800 chai-p-8 chai-rounded-lg chai-shadow-xl">
+                <p class="chai-textcol-white chai-font-bold">shadow-xl</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">0 20px 25px rgba(0,0,0,0.15)</p>
+            </div>
+            <div class="chai-bg-slate-800 chai-p-8 chai-rounded-lg chai-shadow-none">
+                <p class="chai-textcol-white chai-font-bold">shadow-none</p>
+                <p class="chai-textcol-slate-400 chai-text-sm">No shadow</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLEX GROW & SHRINK -->
+    <section class="chai-bg-slate-800 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-8 chai-text-center">Flex Grow & Shrink</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-8 chai-justify-center">
+            <div class="chai-bg-slate-700 chai-p-4 chai-rounded-lg">
+                <p class="chai-textcol-white chai-font-bold chai-mb-3">Flex Grow</p>
+                <div class="chai-flex chai-gap-2" style="width: 300px;">
+                    <div class="chai-bg-indigo-600 chai-p-2 chai-rounded-sm" style="flex-grow: 1;">Grow</div>
+                    <div class="chai-bg-slate-600 chai-p-2 chai-rounded-sm">Normal</div>
+                </div>
+            </div>
+            <div class="chai-bg-slate-700 chai-p-4 chai-rounded-lg">
+                <p class="chai-textcol-white chai-font-bold chai-mb-3">Flex Shrink</p>
+                <div class="chai-flex chai-gap-2" style="width: 200px;">
+                    <div class="chai-bg-sky-600 chai-p-2 chai-rounded-sm" style="flex-shrink: 1; min-width: 0;">Shrink Long Text</div>
+                    <div class="chai-bg-slate-600 chai-p-2 chai-rounded-sm">Normal</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPREHENSIVE STATS & FEATURES -->
+    <section id="stats" class="chai-bg-slate-900 chai-p-12">
+        <h2 class="chai-text-xl chai-font-bold chai-textcol-white chai-mb-12 chai-text-center">ChaiCSS Framework Specs</h2>
+        <div class="chai-flex chai-flex-wrap chai-gap-6 chai-justify-center chai-mb-12">
+            <div class="chai-bg-indigo-900 chai-p-8 chai-rounded-lg chai-shadow-lg chai-transition chai-duration-300" style="flex: 0 1 220px; border: 1px solid rgba(129, 140, 248, 0.3);">
+                <div class="chai-text-3xl chai-font-black chai-textcol-indigo-400 chai-mb-2">14+</div>
+                <p class="chai-textcol-white chai-font-bold chai-mb-1">Color Palettes</p>
+                <p class="chai-textcol-indigo-200 chai-text-sm chai-font-light">Each with 10 OKLCH shades</p>
+            </div>
+            <div class="chai-bg-sky-900 chai-p-8 chai-rounded-lg chai-shadow-lg chai-transition chai-duration-300" style="flex: 0 1 220px; border: 1px solid rgba(14, 165, 233, 0.3);">
+                <div class="chai-text-3xl chai-font-black chai-textcol-sky-400 chai-mb-2">100+</div>
+                <p class="chai-textcol-white chai-font-bold chai-mb-1">Utilities</p>
+                <p class="chai-textcol-sky-200 chai-text-sm chai-font-light">Spacing, display, transforms</p>
+            </div>
+            <div class="chai-bg-emerald-900 chai-p-8 chai-rounded-lg chai-shadow-lg chai-transition chai-duration-300" style="flex: 0 1 220px; border: 1px solid rgba(16, 185, 129, 0.3);">
+                <div class="chai-text-3xl chai-font-black chai-textcol-emerald-400 chai-mb-2">0</div>
+                <p class="chai-textcol-white chai-font-bold chai-mb-1">Dependencies</p>
+                <p class="chai-textcol-emerald-200 chai-text-sm chai-font-light">Pure vanilla JavaScript</p>
+            </div>
+            <div class="chai-bg-rose-900 chai-p-8 chai-rounded-lg chai-shadow-lg chai-transition chai-duration-300" style="flex: 0 1 220px; border: 1px solid rgba(244, 63, 94, 0.3);">
+                <div class="chai-text-3xl chai-font-black chai-textcol-rose-400 chai-mb-2">∞</div>
+                <p class="chai-textcol-white chai-font-bold chai-mb-1">Customizable</p>
+                <p class="chai-textcol-rose-200 chai-text-sm chai-font-light">Extend with any utility</p>
+            </div>
+        </div>
+
+        <!-- Property Categories -->
+        <div class="chai-bg-slate-800 chai-p-8 chai-rounded-lg chai-mb-8">
+            <h3 class="chai-text-lg chai-font-bold chai-textcol-white chai-mb-6">Available Properties</h3>
+            <div class="chai-flex chai-flex-wrap chai-gap-4">
+                <span class="chai-bg-indigo-600 chai-textcol-white chai-p-2 chai-rounded-md chai-text-sm chai-font-bold">Spacing (p, m, gap)</span>
+                <span class="chai-bg-sky-600 chai-textcol-white chai-p-2 chai-rounded-md chai-text-sm chai-font-bold">Colors (16 palettes)</span>
+                <span class="chai-bg-green-600 chai-textcol-white chai-p-2 chai-rounded-md chai-text-sm chai-font-bold">Display (flex, grid)</span>
+                <span class="chai-bg-purple-600 chai-textcol-white chai-p-2 chai-rounded-md chai-text-sm chai-font-bold">Text (alignment, weight)</span>
+                <span class="chai-bg-pink-600 chai-textcol-white chai-p-2 chai-rounded-md chai-text-sm chai-font-bold">Borders (radius, width)</span>
+                <span class="chai-bg-amber-600 chai-textcol-white chai-p-2 chai-rounded-md chai-text-sm chai-font-bold">Shadows (sm-xl)</span>
+                <span class="chai-bg-red-600 chai-textcol-white chai-p-2 chai-rounded-md chai-text-sm chai-font-bold">Transforms (scale, rotate)</span>
+                <span class="chai-bg-orange-600 chai-textcol-white chai-p-2 chai-rounded-md chai-text-sm chai-font-bold">Transitions (duration, ease)</span>
+                <span class="chai-bg-teal-600 chai-textcol-white chai-p-2 chai-rounded-md chai-text-sm chai-font-bold">Filters (blur, brightness)</span>
+                <span class="chai-bg-indigo-700 chai-textcol-white chai-p-2 chai-rounded-md chai-text-sm chai-font-bold">Opacity (0-100%)</span>
+                <span class="chai-bg-cyan-600 chai-textcol-white chai-p-2 chai-rounded-md chai-text-sm chai-font-bold">Letter Spacing</span>
+                <span class="chai-bg-lime-600 chai-textcol-white chai-p-2 chai-rounded-md chai-text-sm chai-font-bold">Z-Index (0-100)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="chai-bg-slate-800 chai-p-6 chai-text-center chai-border chai-border-slate-700">
+        <p class="chai-textcol-slate-400 chai-text-sm chai-mb-2">Built with ⚡ ChaiCSS</p>
+        <p class="chai-textcol-slate-500 chai-text-xs">A modern CSS framework for modern developers</p>
     </footer>
 
     <script src="main.js"></script>
-  </body>
+</body>
 </html>
+
+
