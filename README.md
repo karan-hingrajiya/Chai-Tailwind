@@ -6,6 +6,7 @@ Instead of using a build step or generating a big CSS file, this works directly 
 
 No config, no npm, no setup.
 
+Vercel Deployed Link : [https://chai-tailwind-karan.vercel.app/]
 ---
 
 ## 🚀 Why I made this
