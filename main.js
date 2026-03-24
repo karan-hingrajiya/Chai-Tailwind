@@ -674,7 +674,7 @@ function parseCss(CssString) {
   console.error(
     "property you are trying to use is not defined yet: " + CssString,
   );
-  return { prop: null, value: null, colShade: null };
+  return null;
 }
 
 function resolveValue(prop, val, shade) {
@@ -721,12 +721,16 @@ elements.forEach((elem) => {
   let classes = elem.classList;
 
   classes.forEach((e) => {
-    if (e.startsWith("chai-")) {
-      let res = parseCss(e);
+    if (!set.has(e)) {
+      set.add(e);
+      if (e.startsWith("chai-")) {
+        let res = parseCss(e);
 
-      let finalresult = resolveValue(res.prop, res.value, res.colShade);
-      if (finalresult) {
-        style.innerHTML += `.${e}{ ${finalresult.cssProp}:${finalresult.cssVal}; }\n`;
+        let finalresult = resolveValue(res.prop, res.value, res.colShade);
+
+        if (finalresult) {
+          style.innerHTML += `.${e}{ ${finalresult.cssProp}:${finalresult.cssVal}; }\n`;
+        }
       }
     }
   });
